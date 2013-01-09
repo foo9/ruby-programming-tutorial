@@ -9,3 +9,4 @@ puts "Please input your family name:"
 family_name = STDIN.gets.chomp
 
 puts "Hello, #{first_name} #{family_name}."
+

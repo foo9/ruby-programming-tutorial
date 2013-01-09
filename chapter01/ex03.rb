@@ -16,9 +16,9 @@ print "何日:"
 birthday_day = STDIN.gets.to_i
 
 if Date::valid_date?(birthday_year, birthday_month, birthday_day)
-	birthday = Date.new(birthday_year, birthday_month, birthday_day)
-	today = Date.today
-	diff = (today - birthday)
-	puts diff.to_i * 24 * 60 * 60
+  birthday = Date.new(birthday_year, birthday_month, birthday_day)
+  today = Date.today
+  diff = (today - birthday)
+  puts diff.to_i * 24 * 60 * 60
 end
 
