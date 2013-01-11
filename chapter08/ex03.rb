@@ -1,13 +1,13 @@
 # encoding: utf-8
 
 # weddingNumberはどうでしょう?
-# このプログラムはenglishNumber とほとんど同じように動作しますが、
+# このプログラムはweddingNumber とほとんど同じように動作しますが、
 # "and" という接続詞をやたらめったら挿入します。
 # たとえば 'nineteen hundred and seventy and two' という具合に、
 # 結婚式の 招待状のような感じで。
 
 
-def englishNumber number
+def weddingNumber number
   if number < 0  #  負の数は不可です。
     return '負でない数を入力してください.'
   end
@@ -29,7 +29,7 @@ def englishNumber number
   left  = left - write*100  #  下2桁をleftに残します。
 
   if write > 0
-    hundreds  = englishNumber write
+    hundreds  = weddingNumber write
     numString = numString + hundreds + ' hundred'
 
     if left > 0
@@ -63,20 +63,20 @@ def englishNumber number
   numString
 end
 
-puts englishNumber(  0)
-puts englishNumber(  9)
-puts englishNumber( 10)
-puts englishNumber( 11)
-puts englishNumber( 17)
-puts englishNumber( 32)
-puts englishNumber( 88)
-puts englishNumber( 99)
-puts englishNumber(100)
-puts englishNumber(101)
-puts englishNumber(234)
-puts englishNumber(3211)
-puts englishNumber(999999)
-puts englishNumber(1000000000000)
+puts weddingNumber(  0)
+puts weddingNumber(  9)
+puts weddingNumber( 10)
+puts weddingNumber( 11)
+puts weddingNumber( 17)
+puts weddingNumber( 32)
+puts weddingNumber( 88)
+puts weddingNumber( 99)
+puts weddingNumber(100)
+puts weddingNumber(101)
+puts weddingNumber(234)
+puts weddingNumber(3211)
+puts weddingNumber(999999)
+puts weddingNumber(1000000000000)
 
-puts englishNumber(1972)
+puts weddingNumber(1972)
 
